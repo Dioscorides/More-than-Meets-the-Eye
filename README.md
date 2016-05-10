@@ -1,0 +1,2 @@
+# discoverSC
+Hackathon Project
