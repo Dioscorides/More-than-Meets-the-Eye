@@ -2,64 +2,23 @@ var map, infowindow;
 localStorage.placeData = localStorage.placeData ? localStorage.placeData : "";
 
 function initMap() {
-    var customMapType = new google.maps.StyledMapType([
-        {
-            "featureType": "administrative",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "on"
-			}]
-		}, {
-            "featureType": "poi",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "off"
-			}]
-		}, {
-            "featureType": "road",
-            "elementType": "all",
-            "stylers": [{
-                "color": "#bfbfbf"
-			}]
-		}, {
-            "featureType": "landscape",
-            "elementType": "all",
-            "stylers": [{
-                "color": "#ebebeb"
-			}]
-		}, {
-            "featureType": "water",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "simplified"
-			}, {
-                "color": "#006699"
-			}]
-		}, {
-            "featureType": "road.highway",
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-			}]
-  }]);
-    var customMapTypeId = 'custom_style';
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: 
         {
-            lat: 52.160114,
-            lng: 4.497010
+            lat: 52.156944,
+            lng: 4.485556
         },
-        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.SATELLITE,
+        zoom: 17,
         zoomControl: true,
         mapTypeControl: false,
         scaleControl: false,
-        streetViewControl: false,
+        streetViewControl: true,
         rotateControl: false,
         fullscreenControl: true,
     });
-    map.mapTypes.set(customMapTypeId, customMapType);
-    map.setMapTypeId(customMapTypeId);
+    
     infowindow = new google.maps.InfoWindow();
 
     function placeMapper(place) {
@@ -72,7 +31,7 @@ function initMap() {
                 lat: place.lat,
                 lng: place.lng
             });
-            map.setZoom(18);
+            map.setZoom(19);
             infowindow.setContent(infowindowContent);
             infowindow.open(map, marker);
             row.parent().find('tr').removeClass('bolderText');
