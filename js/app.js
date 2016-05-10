@@ -64,9 +64,9 @@ function initMap() {
 
     function placeMapper(place) {
         //Here goes the stuff for the Infowindow
-        var infowindowContent = "<h3>" + place.Library + "</h3><br><p>" + place.City + "<br/>" + '<a href="' + place.Website + '">Link to digitized manuscripts</a>' + "</p>";
+        var infowindowContent = "<h3>" + place.Place + "</h3><br><p>" + place.City + "<br/>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</p>";
         //Here goes the stuff for the Datatable
-        var row = $("<tr>" + "<td>" + place.Nation + "</td>" + "<td>" + place.City + "</td>" + "<td>" + place.Library + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lng + "</td>" + "<td>" + place.Quantity + "</td>" + "<td>" + '<a href="' + place.Website + '">Link to digitized manuscripts</a>' + "</td>" + "</tr>");
+        var row = $("<tr>" + "<td>" + place.Place + "</td>" + "<td>" + place.City + "</td>" + "<td>" + place.Place + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lng + "</td>" + "<td>" + place.Quantity + "</td>" + "<td>" + '<a href="' + place.Website + '">Link to digitized manuscripts</a>' + "</td>" + "</tr>");
         var clickToggle = function () {
             map.setCenter({
                 lat: place.lat,
@@ -86,7 +86,7 @@ function initMap() {
                 lng: place.lng
             },
             map: map,
-            title: place.Library
+            title: place.Place
         });
         row.click(clickToggle);
         marker.addListener('click', clickToggle);
