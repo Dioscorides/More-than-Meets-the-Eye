@@ -5,16 +5,22 @@
     <title>MTMEapp - digitized items from the UB App</title>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="The MTMEapp is the portal to thousands of digitized items from the UB">
+    <meta name="description" content="The MTMEapp is the portal to thousands of digitized items from the UB around the world!">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="MTMEapp - digitized items from the UB App">
     <meta property="og:determiner" content="the">
-    <meta property="og:description" content="The MTMEapp is the portal to thousands of digitized items from the UB">
-    <meta property="og:site_name" content="More than meets thce eye - digitized items from the UB" />
+    <meta property="og:description" content="The MTMEapp is the portal to thousands of digitized items from the UB around the world!">
+    <meta property="og:url" content="//***ADD LINKS HERE***/app/">
+    <meta property="og:image" content="//***ADD LINKS HERE***/app/images/MTMEapp.jpg" />
+    <meta property="og:site_name" content="More than meets the eye - digitized items from the UB " />
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SexyCodicology">
     <meta name="twitter:title" content="The MTMEapp">
-    <meta name="twitter:description" content="The MTMEapp is the portal to thousands of digitized items from the UB">
+    <meta name="twitter:description" content="The MTMEapp is the portal to thousands of digitized items from the UB around the world!">
+    <meta name="twitter:creator" content="@SexyCodicology">
+    <meta name="twitter:image:src" content="//***ADD LINKS HERE***/app/images/MTMEapp.jpg">
+    <meta name="twitter:domain" content="//***ADD LINKS HERE***">
     <!-- Styles -->
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Philosopher:400,700'>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11,r-2.0.2/datatables.min.css">
@@ -23,6 +29,19 @@
 </head>
 
 <body>
+    <!-- Facebook stuff -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=705263246163822";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- End Facebook Stuff -->
     <!-- BEGIN NAV -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -35,14 +54,14 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="../images/logo.png">
+                    <img alt="Brand" src="../images/sclogo.png">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="mainnavi">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">MTMEapp<span class="sr-only">(current)</span></a></li>
-                    <li><a href="//***ADD LINKS HERE***/blog/">Catalog</a></li>
+                    <li><a href="//***ADD LINKS HERE***/blog/">Blog</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -54,9 +73,9 @@
         <div class='well'>
             <h1>MTMEapp - digitized items from the UB app</h1>
             <h2>Discover thousands of digitized items from the UB!</h2>
-            <p>The MTMEapp (digitized items from the UB App) links to the
-                <strong>Special Collections</strong> of Leiden University Leiden. Each one of these pins contains links that can be browsed for free. The MTMEapp is developed by the
-                <a href='link to github'>Hackathon</a> Team; it is part of the <a href='//***ADD LINKS HERE***'>More than meets the eye</a> project.</p>
+            <p>The MTMEapp (digitized items from the UB App) links to
+                <strong>more than 500 libraries</strong> in the world. Each one of these contains ***ADD TEXT HERE*** that can be browsed for free. The MTMEapp is developed by the
+                <a href='//sexycodicology.net/blog'>Hackathon</a> Team; it is part of the <a href='//***ADD LINKS HERE***'>digitized items from the UB  (More than meets the eye)</a> project.</p>
             <!-- BEGIN NAVIGATION PILLS -->
             <div class='selectors'>
                 <ul class="nav nav-pills nav-justified">
@@ -65,6 +84,38 @@
                 </ul>
             </div>
             <!-- END NAVIGATION PILLS -->
+            <!-- SHARE BUTTONS -->
+            <div id="share-buttons">
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=http://***ADD LINKS HERE***/app/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https%3A%2F%2F***ADD LINKS HERE***%2Fapp%2F&via=SexyCodicology&text=The%20MTMEapp%20and%20hundreads%20of%20links%20to%20digitized%20manuscripts" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+                <!-- Tumblr-->
+                <a href="http://www.tumblr.com/share/link?url=http://***ADD LINKS HERE***/app/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+                </a>
+                <!-- Google+ -->
+                <a href="https://plus.google.com/share?url=http://***ADD LINKS HERE***/app/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                </a>
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://***ADD LINKS HERE***/app/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                </a>
+                <!-- Reddit -->
+                <a href="http://reddit.com/submit?url=http://***ADD LINKS HERE***/app/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+                </a>
+                <!-- StumbleUpon-->
+                <a href="http://www.stumbleupon.com/submit?url=http://***ADD LINKS HERE***/app/" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" />
+                </a>
+            </div>
+            <!-- END SHARE BUTTONS -->
         </div>
         <div class="tab-content">
             <!-- BEGIN MAP TAB -->
@@ -101,18 +152,80 @@
                         <tbody></tbody>
                     </table>
                 </div>
+                <!-- MISSING LIBRARY BUTTON -->
+                <div class='well'>
+                    <div class='missing'>
+                        <a class="btn btn-info btn-lg btn-block" href="//***ADD LINKS HERE***/contact/send-us-tip/" role="button">Add a Missing Library</a>
+                    </div>
+                </div>
+                <!-- END MISSING LIBRARY BUTTON -->
             </div>
             <!-- END MAP TAB -->
             <!-- BEGIN TAB 3! -->
             <div id="appinfo" class="tab-pane fade">
                 <div class="well">
                     <h3>MTMEapp Info</h3>
+                    <h4>What is the MTMEapp?</h4>
+                    <p>The MTMEapp is an app that links to digital repositories containing digitized western ***ADD TEXT HERE***.</p>
+                    <h4>Who made the MTMEapp?</h4>
+                    <p>The MTMEapp is a project by <a href="https://nl.linkedin.com/in/giuliomenna">Giulio Menna, MA</a>, and <a href="https://nl.linkedin.com/in/mjtdevos">Marjolein de Vos, MA.</a> It is an open source project and everyone can contribute in its development via GitHub</p>
+                    <h4>I love the MTMEapp! How can I help?</h4>
+                    <ul>
+                        <li>
+                            <h5>Contribute to the MTMEapp</h5>
+                            <p>
+                                If you are aware of a missing library on our MTMEapp, you can use the <a href="//***ADD LINKS HERE***/contact/send-us-tip/" role="button">"Add a Missing Library" form</a> to let us know. We'll be happy to add it!
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Donate, or buy yourself something nice!</h5>
+                            <p>
+                                We would like to improve the website (transfer to HTTPS, find a better Hosting service, speed up everything.) But we are an independent project without funding. If you have found the MTMEapp useful, or you want to support what we do, <a href="http://sexycodicology.net/blog/support-us/">consider buying us some coffee via Paypal</a>! We'll transform coffee into code! If you are not into donating, but you love manuscripts, check out our <a href="//www.redbubble.com/people/sexycodicology/shop">RedBubble</a> and <a href="//displate.com/giuliomenna/medieval-manuscripts">Displate</a> shops. A small percentage of what you spend will go to us, so we can buy coffee, and code about codices!
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Spread the word!</h5>
+                            <p>
+                                Tell your friends about us. Link to the DMMap on your blog. Tweet and follow us! Find us on <a href="https://www.facebook.com/SexyCodicology/">Facebook</a>! <a href="http://sexycodicology.tumblr.com/">Tumblr</a>! <a href="https://www.youtube.com/user/SexyCodicology">Youtube</a>! <a href="https://www.pinterest.com/SexyCodicology/">Pinterest</a>! <a href="https://www.flickr.com/photos/133893680@N05/favorites/">Flickr</a>! We are everywhere!
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Help us fix the MTMEapp or make something else out of it!</h5>
+                            <p>
+                                Got HTML skills? You read CSS and Javascript just like you read Latin written in Beneventan script? You can find all our live code over at <a href="https://github.com/SexyCodicology/MTMEapp">Github</a>. Clone, commit, pull. You know the drill! You have an idea that would benefit from using the MTMEapp data? Go ahead! Download the JSON file and have fun!
+                            </p>
+                        </li>
+                    </ul>
+                    <h4>I would like to base a project on the MTMEapp! Can I?</h4>
+                    <p>Absolutely! The code is on GitHub, please remember to mention us somewhere!</p>
+                    <h4>Where can I contact you?</h4>
+                    <p>There is a <a href="http://***ADD LINKS HERE***/contact/">nice and tidy contact form for that.</a></p>
                 </div>
             </div>
             <!-- END TAB 3! -->
             <div class="footer">
                 <!-- BEGIN DONATION -->
-                            </div>
+                <div class="donation">
+                    <div class="well">
+                        <h3>Give us a hand!</h3>
+                        <p>The MTMEapp is created with a lot of passion by the fine people of <a href='//sexycodicology.net/blog'>Hackathon </a> for free. Why not show some love?</p>
+                        <div class="donation-wrapper">
+                            <form action="//www.paypal.com/cgi-bin/webscr" method="post">
+                                <input type="hidden" name="cmd" value="_donations">
+                                <input type="hidden" name="item_name" value="Donation">
+                                <input type="hidden" name="business" value="****">
+                                <input type="hidden" name="currency_code" value="EUR">
+                                <input type="text" class="form-control" placeholder="Please Enter amount you would like to donate" name="amount" required>
+                                <br/>
+                                <input type="submit" class="btn btn-info" value="Donate" id="paypal">
+                                <div class="paypal">
+                                    <a href="//www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('//www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="//www.paypalobjects.com/webstatic/mktg/logo/bdg_secured_by_pp_2line.png" border="0" alt="Secured by PayPal"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- BEGIN LICENSE -->
@@ -122,14 +235,13 @@
         </a>
         <br />
         <span xmlns:dct="//purl.org/dc/terms/" href="//purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">MTMEapp</span> by
-        <a xmlns:cc="//creativecommons.org/ns#" href="***add address here***" property="cc:attributionName" rel="cc:attributionURL">Hackathon</a> is licensed under a
+        <a xmlns:cc="//creativecommons.org/ns#" href="//sexycodicology.net/blog" property="cc:attributionName" rel="cc:attributionURL">Hackathon</a> is licensed under a
         <a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-        <br />Permissions beyond the scope of this license may be av
-        ilable
+        <br />Permissions beyond the scope of this license may be available
         <a xmlns:cc="//creativecommons.org/ns#" href="//***ADD LINKS HERE***/contact/" rel="cc:morePermissions">here</a>.
-        <a href='//***ADD LINKS HERE***/app'>MTMEapp</a> development and idea by <a href='//www.linkedin.com/in/alicedejong'>Alice de Jong</a>, 
-        <a href='//www.linkedin.com/in/giuliomenna'>Giulio Menna</a> and <a href='//www.linkedin.com/in/marjoleindevos'>Marjolein de Vos</a>
-        <br />
+        <a href='//***ADD LINKS HERE***/app'>MTMEapp</a> development and idea by
+        <a href='//www.linkedin.com/in/giuliomenna'>Giulio Menna</a>.
+        <br />Image source: <a href='//www.metmuseum.org/collection/the-collection-online/search/470306'>MET, The Belles Heures of Jean de France, Duc de Berry</a>.
     </div>
     <!-- END LICENSE -->
     <script src="js/app.js"></script>
