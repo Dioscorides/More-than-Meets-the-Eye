@@ -64,15 +64,15 @@ function initMap() {
 
     function placeMapper(place) {
         //Here goes the stuff for the Infowindow
-        var infowindowContent = "<h3>" + place.Place + "</h3><br><p>" + place.City + "<br/>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</p>";
+        var infowindowContent = "<h3>" + place.Place + "</h3><br><p>" + place.Description + "<br/>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</p>";
         //Here goes the stuff for the Datatable
-        var row = $("<tr>" + "<td>" + place.Place + "</td>" + "<td>" + place.City + "</td>" + "<td>" + place.Place + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lng + "</td>" + "<td>" + place.Quantity + "</td>" + "<td>" + '<a href="' + place.Website + '">Link to digitized manuscripts</a>' + "</td>" + "</tr>");
+        var row = $("<tr>" + "<td>" + place.Place + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lng + "</td>" + "<td>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</td>" + "</tr>");
         var clickToggle = function () {
             map.setCenter({
                 lat: place.lat,
                 lng: place.lng
             });
-            map.setZoom(12);
+            map.setZoom(18);
             infowindow.setContent(infowindowContent);
             infowindow.open(map, marker);
             row.parent().find('tr').removeClass('bolderText');
@@ -105,12 +105,12 @@ function initMap() {
                 responsive: true,
                 "columnDefs": [
                     {
-                        "targets": [3],
+                        "targets": [2],
                         "visible": false,
                         "searchable": false
             },
                     {
-                        "targets": [4],
+                        "targets": [1],
                         "visible": false,
                         "searchable": false
             }
