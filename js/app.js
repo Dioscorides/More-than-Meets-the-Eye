@@ -7,7 +7,7 @@ function initMap() {
         center: 
         {
             lat: 52.156944,
-            lng: 4.485556
+            lng: 4.497010
         },
         mapTypeId: google.maps.MapTypeId.SATELLITE,
         zoom: 17,
@@ -23,13 +23,13 @@ function initMap() {
 
     function placeMapper(place) {
         //Here goes the stuff for the Infowindow
-        var infowindowContent = "<h3>" + place.Place + "</h3><br><p>" + place.Description + "<br/>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</p>";
+        var infowindowContent = "<h3>" + place.title + "</h3><br><p>" + place.Description + "<br/>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</p>";
         //Here goes the stuff for the Datatable
-        var row = $("<tr>" + "<td>" + place.Place + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lng + "</td>" + "<td>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</td>" + "</tr>");
+        var row = $("<tr>" + "<td>" + place.title + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lon + "</td>" + "<td>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</td>" + "</tr>");
         var clickToggle = function () {
             map.setCenter({
                 lat: place.lat,
-                lng: place.lng
+                lng: place.lon
             });
             map.setZoom(19);
             infowindow.setContent(infowindowContent);
@@ -42,10 +42,10 @@ function initMap() {
         var marker = new google.maps.Marker({
             position: {
                 lat: place.lat,
-                lng: place.lng
+                lng: place.lon
             },
             map: map,
-            title: place.Place
+            title: place.title
         });
         row.click(clickToggle);
         marker.addListener('click', clickToggle);
