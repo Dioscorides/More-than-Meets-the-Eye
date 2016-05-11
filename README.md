@@ -8,9 +8,9 @@ Better still, the same code can be used by any library or museum so they, too, c
 Now: link to UB Leiden Special Collections (Leiden local catalogue). 
 
 Extras, to be developed:
-*Pins in Streetview with own LOGO or brand;
-*Second and third links to images in Flickr, Google;
-*More links to collections of 071-members
+* Pins in Streetview with own LOGO or brand;
+* Second and third links to images in Flickr, Google;
+* More links to collections of 071-members
 
 Future: link to other collections (to be adapted by institutions which wants to use our code)
 
