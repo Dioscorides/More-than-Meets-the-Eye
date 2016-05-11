@@ -22,9 +22,9 @@ function initMap() {
 
     function placeMapper(place) {
         //Here goes the stuff for the Infowindow
-        var infowindowContent = "<h3>" + place.title + "</h3><br><p>" + place.Description + "<br/>" + '<a href="' + place.title + '">View UBL Special Collections</a>' + "</p>";
+        var infowindowContent = "<h3>" + place.title + "</h3><br><p>" + place.Description + "<br/>" + '<a href=http://catalogue.leidenuniv.nl/primo_library/libweb/action/dlSearch.do?&group=GUEST&onCampus=false&vid=UBL_V1&institution=UBL&tab=special&search_scope=UBL_LMS&ct=facet&fctN=facet_rtype&fctV=Images&query=any,contains,"' + place.title + '" target="_blank">View UBL Special Collections</a>' + "</p>";
         //Here goes the stuff for the Datatable
-        var row = $("<tr>" + "<td>" + place.title + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lon + "</td>" + "<td>" + '<a href=&quot;http://catalogue.leidenuniv.nl/primo_library/libweb/action/search.do?ct=facet&fctN=facet_domain&fctV=ERES&rfnGrp=2&rfnGrpCounter=2&frbg=&rfnGrpCounter=1&fn=search&indx=1&dscnt=0&scp.scps=scope%3A(UBL_DTL)%2Cscope%3A(drawings)%2Cscope%3A(maps)%2Cscope%3A(photos)%2Cscope%3A(photographica)%2Cscope%3A(prints)%2Cscope%3A(paintings)%2Cscope%3A(letters)%2Cscope%3A(early_prints)%2Cscope%3A(collection_guides)%2Cscope%3A(manuscripts)&tb=t&fctV=images&mode=Basic&vid=UBL_V1&ct=facet&rfnGrp=1&tab=special&srt=rank&fctN=facet_rtype&vl(freeText0)=&quot;' + place.title + '">View UBL Special Collections</a>' + "</td>" + "</tr>");
+        var row = $("<tr>" + "<td>" + place.title + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lon + "</td>" + "<td>" + '<a href=http://catalogue.leidenuniv.nl/primo_library/libweb/action/dlSearch.do?&group=GUEST&onCampus=false&vid=UBL_V1&institution=UBL&tab=special&search_scope=UBL_LMS&ct=facet&fctN=facet_rtype&fctV=Images&query=any,contains,"' + place.title + '" target="_blank">View UBL Special Collections</a>' + "</td>" + "</tr>");
         var clickToggle = function () {
             map.setCenter({
                 lat: place.lat,
