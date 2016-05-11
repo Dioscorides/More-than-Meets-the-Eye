@@ -1,6 +1,7 @@
 # discoverSC
 Hackathon Project
-The More than Meets the Eye MtMtEye-app is pinpointing Wikipedia-generated (local) references on a Google Street View map, and then generating links to thousands of related images in UB Leiden's Special Collections. It doesn’t matter where you are in the world; browsing Street View will take you to the Leiden catalogue with its rich collections.
+
+The More than Meets the Eye MtMtEye-app is pinpointing Wikipedia-generated (local) references on a Google Maps, and then generating links to thousands of related images in UB Leiden's Special Collections. It doesn’t matter where you are in the world; browsing Google Maps and Google Street View will take you to the Leiden catalogue with its rich collections.
 
 Better still, the same code can be used by any library or museum so they, too, can provide easy links to their collections without any hassle.
 
