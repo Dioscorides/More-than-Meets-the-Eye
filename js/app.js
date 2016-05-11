@@ -23,9 +23,9 @@ function initMap() {
 
     function placeMapper(place) {
         //Here goes the stuff for the Infowindow
-        var infowindowContent = "<h3>" + place.title + "</h3><br><p>" + place.Description + "<br/>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</p>";
+        var infowindowContent = "<h3>" + place.title + "</h3><br><p>" + place.Description + "<br/>" + '<a href="' + place.title + '">View UBL Special Collections</a>' + "</p>";
         //Here goes the stuff for the Datatable
-        var row = $("<tr>" + "<td>" + place.title + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lon + "</td>" + "<td>" + '<a href="' + place.Website + '">Link to digitized objects</a>' + "</td>" + "</tr>");
+        var row = $("<tr>" + "<td>" + place.title + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lon + "</td>" + "<td>" + '<a href="' + place.title + '">View UBL Special Collections</a>' + "</td>" + "</tr>");
         var clickToggle = function () {
             map.setCenter({
                 lat: place.lat,
