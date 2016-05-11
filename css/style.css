@@ -203,7 +203,6 @@ table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc {
     cursor: pointer;
-
     *cursor: hand;
 }
 
@@ -512,7 +511,6 @@ table.dataTable td {
     position: relative;
     clear: both;
     zoom: 1;
-
     *zoom: 1;
 }
 
@@ -566,7 +564,6 @@ table.dataTable td {
 
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
     -webkit-overflow-scrolling: touch;
-
     *margin-top: -1px;
 }
 
@@ -632,4 +629,13 @@ table.dataTable td {
     li.paginate_button {
         display: none;
     }
+}
+
+.navbar-brand {
+    height: 90px;
+    padding: 15px 25px;
+}
+
+.navbar-brand>img {
+    height: 60px;
 }
