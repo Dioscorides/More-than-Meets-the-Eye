@@ -20,27 +20,24 @@ function initMap() {
 
     infowindow = new google.maps.InfoWindow();
 
-
-    $(document).ready(function () {
-        $.get('js/data.json', function (tabledata) {
-            tabledata.map(placeMapper);
-            //Datatable options go here!
-            $('#datatablex').DataTable({
-                responsive: true,
-                "columnDefs": [
-                    {
-                        "targets": [2],
-                        "visible": false,
-                        "searchable": false
-            },
-                    {
-                        "targets": [1],
-                        "visible": false,
-                        "searchable": false
-            }
+    $.get('js/data.json', function (tabledata) {
+      tabledata.map(placeMapper);
+      //Datatable options go here!
+      $('#datatablex').DataTable({
+        responsive: true,
+        "columnDefs": [
+          {
+            "targets": [2],
+            "visible": false,
+            "searchable": false
+          },
+          {
+            "targets": [1],
+            "visible": false,
+            "searchable": false
+          }
         ]
-            });
-        });
+      });
     });
 }
 
