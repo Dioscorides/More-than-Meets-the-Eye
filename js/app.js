@@ -58,6 +58,11 @@ function placeMapper(place) {
         infowindow.open(map, marker);
         row.parent().find('tr').removeClass('bolderText');
         row.addClass('bolderText');
+
+        //Smootly scroll up to the map when a row is clicked
+        $('html, body').animate({
+          scrollTop: $("#home").offset().top
+        }, 500);
     }
     $("#datatablex").find('tbody').append(row);
 
