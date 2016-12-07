@@ -43,9 +43,9 @@ function initMap() {
 
 function placeMapper(place) {
     //Here goes the stuff for the Infowindow
-    var infowindowContent = "<h3>" + place.title + "</h3><br><p>" + place.Description + "<br/>" + '<a href=http://catalogue.leidenuniv.nl/primo_library/libweb/action/dlSearch.do?&group=GUEST&onCampus=false&vid=UBL_V1&institution=UBL&tab=special&search_scope=UBL_LMS&ct=facet&fctN=facet_rtype&fctV=Images&query=any,contains,' + place.title.replace(" ", "%20") + ' target="_blank">View UBL Special Collections</a>' + "</p>";
+    var infowindowContent = "<h3>" + place.title + "</h3><br><p>" + place.Description + "<br/>" + '<a href="http://catalogue.leidenuniv.nl/primo_library/libweb/action/search.do?mode=Basic&vid=UBL_V1&vl(freeText0)=' + place.title.replace(" ", "%20") + ' &fn=search&tab=special&" target="_blank">View UBL Special Collections</a>' + "</p>";
     //Here goes the stuff for the Datatable
-    var row = $("<tr>" + "<td>" + place.title + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lon + "</td>" + "<td>" + '<a href=http://catalogue.leidenuniv.nl/primo_library/libweb/action/dlSearch.do?&group=GUEST&onCampus=false&vid=UBL_V1&institution=UBL&tab=special&search_scope=UBL_LMS&ct=facet&fctN=facet_rtype&fctV=Images&query=any,contains,' + place.title.replace(" ", "%20") + ' target="_blank">View UBL Special Collections</a>' + "</td>" + "</tr>");
+    var row = $("<tr>" + "<td>" + place.title + "</td>" + "<td>" + place.lat + "</td>" + "<td>" + place.lon + "</td>" + "<td>" + '<a href="http://catalogue.leidenuniv.nl/primo_library/libweb/action/search.do?mode=Basic&vid=UBL_V1&vl(freeText0)=' + place.title.replace(" ", "%20") + ' &fn=search&tab=special&" target="_blank">View UBL Special Collections</a>' + "</td>" + "</tr>");
     //Here goes the stuff for the street view
 
     var clickToggle = function () {
